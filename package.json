@@ -1,0 +1,33 @@
+{
+  "name": "dsh-turn-notify",
+  "version": "0.9.2",
+  "description": "Stacked always-on-top completion cards for DSH, shown in the bottom-right corner whenever a turn ends.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "notification",
+    "windows",
+    "always-on-top"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.4.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "notify-window.ps1",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

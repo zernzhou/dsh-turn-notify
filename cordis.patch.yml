@@ -1,0 +1,5 @@
+# Inserts this bundle's single Host row. Keep the row id stable: a reinstall
+# overrides this row instead of adding a second one.
+- insert:
+    - id: turn-notify
+      name: 'dsh-turn-notify'
